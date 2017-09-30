@@ -1,0 +1,20 @@
+在sublime3 安装插件
+sass 和 sass build
+之后在sublime3菜单上 选择Tools->Build System->SASS - Compressed，点上对勾
+之后在 scss文件里，按 ctrl+b 就会在当前目录生成 与scss文件同名的css文件
+
+添加文件 scss/style.scss
+在scss/style.scss上按
+ctrl+b
+生成scss/style.css
+
+在APP.js
+添加代码
+import './scss/style.css';
+和
+<div className="box"></div>
+
+npm start
+
+可以看到css是有加前缀的
+

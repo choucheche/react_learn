@@ -1,0 +1,9 @@
+npm start
+//启动服务器，带热更新
+npm run build
+//创建生产文件
+npm run test
+//进入测试模式
+
+在 scss文件里，按 ctrl+b 就会在当前目录生成 与scss文件同名的css文件
+//参考 步骤1/2-安装sass.txt

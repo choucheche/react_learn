@@ -1,0 +1,16 @@
+@mixin font-size($num){
+  font-size: $num;
+  font-size: ($num/100px)*1rem;
+}
+@mixin width($num){
+  width: $num;
+  width: ($num/100px)*1rem;
+}
+@mixin height($num){
+  height: $num;
+  height: ($num/100px)*1rem;
+}
+@mixin padding($num1,$num2,$num3,$num4){
+  padding: $num1 $num2 $num3 $num4;
+  padding: ($num1/100px)*1rem ($num2/100px)*1rem ($num3/100px)*1rem ($num4/100px)*1rem;
+}

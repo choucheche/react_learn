@@ -1,0 +1,13 @@
+npm install jquery --save
+
+使用的时候，
+比如修改 index.js
+添加代码
+import $ from 'jquery';
+和
+$(function(){
+	$('.box').css('border','1px #000 solid');
+});
+
+而 .box 代码是在 App.js文件创建的，App.js被引用进 index.js里，
+在index.js里也可以操作 .box

@@ -1,0 +1,8 @@
+在node_modules/react-scripts/config下找到 paths.js 文件，
+找到这段代码
+envPublicUrl || (publicUrl ? url.parse(publicUrl).pathname : '/');
+改成
+envPublicUrl || (publicUrl ? url.parse(publicUrl).pathname : './');
+
+再用 npm run build
+生成的页面路径就为相对路径，而不是绝对路径了，可以在线下也看到页面效果了

@@ -1,0 +1,57 @@
+@import "switchRem.scss";
+@import "color.scss";
+
+*{
+	margin:0;padding:0;
+  box-sizing:border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h2{
+	@include font-size(32px);
+}
+.box {
+  @include width(100px);
+  @include height(100px);
+  background: $nav-color;
+  display:block;
+}
+
+//编译后
+
+/*
+.box {
+    width: 100px;
+    height: 100px;
+    background: #F90;
+    display: block;
+}
+*/
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  @include height(80px);
+}
+
+.App-header {
+  background-color: #222;
+  @include height(214px);
+  @include padding(20px,20px,20px,20px);
+  color: white;
+}
+
+.App-intro {
+  @include font-size(16px);
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
